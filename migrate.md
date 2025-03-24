@@ -241,6 +241,7 @@ The new SDK represents a significant improvement in API design and capabilities.
 # Additional Instructions: 
 
 - Make sure to always use `process.env.GEMINI_API_KEY` as process env for the clients. 
-- And as model `gemini-2.0-flash`
+- Update `gemini-1.5-flash` to `gemini-2.0-flash`, keep all other model ids as they are in the original docs
+- if a function is already used update it to be called `main`
 
 Update the following snippet only return the new snippet, no info nothing, only the code.

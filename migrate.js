@@ -101,15 +101,10 @@ async function main() {
         
         // 9. Print the migrated code to stdout
         console.log('\n--- Migrated Code ---\n');
-        console.log(migratedCode);
         
       } catch (execError) {
         console.error('\n❌ Execution of migrated code failed:', execError.message);
       } finally {
-        // Clean up the temp file
-        if (existsSync(tempFileName)) {
-          await fs.unlink(tempFileName);
-        }
       }
     } catch (apiError) {
       console.error('Error calling Gemini API:', apiError.message);
