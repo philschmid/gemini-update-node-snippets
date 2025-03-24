@@ -1,0 +1,21 @@
+{
+  "name": "gemini-code-migrator",
+  "version": "1.0.0",
+  "description": "A tool to migrate code from old Gemini SDK to new SDK using Gemini itself",
+  "main": "migrate.js",
+  "type": "module",
+  "scripts": {
+    "migrate": "node migrate.js"
+  },
+  "keywords": [
+    "gemini",
+    "migration",
+    "google-ai",
+    "genai"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@google/genai": "^0.6.0"
+  }
+}
