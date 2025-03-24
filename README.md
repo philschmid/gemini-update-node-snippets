@@ -11,8 +11,8 @@ A tool to automatically migrate code from the old Gemini JavaScript SDK (`@googl
 
 1. Clone this repository:
    ```bash
-   git clone <repository-url>
-   cd gemini-code-migrator
+   git clone philschmid/gemini-update-node-snippets
+   cd gemini-update-node-snippets
    ```
 
 2. Install dependencies:
