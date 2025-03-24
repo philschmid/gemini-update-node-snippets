@@ -54,8 +54,10 @@ async function main() {
     
     // 2. Read the migration guide markdown
     let migrateGuide;
+    let sdkCode;
     try {
       migrateGuide = await fs.readFile('migrate.md', 'utf8');
+      sdkCode = await fs.readFile('sdk.md', 'utf8');
     } catch (error) {
       console.error('Error: Cannot read migration guide file (migrate.md).');
       console.error('Make sure the file exists in the current directory.');
@@ -63,7 +65,7 @@ async function main() {
     }
     
     // 3. Create the prompt with the user's code
-    const fullPrompt = `${migrateGuide}\n\n\`\`\`javascript\n${codeSnippet}\n\`\`\``;
+    const fullPrompt = `Here is the migration guide: ${migrateGuide}\n\nHere is the SDK code: ${sdkCode}\n\nHere is the user's code: \`\`\`javascript\n${codeSnippet}\n\`\`\``;
     
     console.log('🔄 Processing code migration with Gemini...');
     
