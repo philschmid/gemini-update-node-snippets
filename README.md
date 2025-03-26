@@ -31,8 +31,8 @@ The script takes JavaScript code via stdin and outputs the migrated code to stdo
 
 ```bash
 # Basic usage
-cat examples/basic_example.js | node migrate.js basic_example.js
-cat examples/embeddings.js | node migrate.js basic_example.js
+cat examples/python.py | node migrate.js basic_example.js
+cat examples/cache.js | node migrate.js basic_example.js
 ```
 
 ## How It Works
