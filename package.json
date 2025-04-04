@@ -5,7 +5,8 @@
   "main": "migrate.js",
   "type": "module",
   "scripts": {
-    "migrate": "node migrate.js"
+    "migrate": "node migrate.js",
+    "mcp": "node fc/js/mcp_test.js"
   },
   "keywords": [
     "gemini",
@@ -16,6 +17,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@google/genai": "^0.6.0"
+    "@google/genai": "^0.6.0",
+    "@modelcontextprotocol/sdk": "^1.8.0"
   }
 }
